@@ -49,7 +49,7 @@ img,video{display:block;max-width:100%}
 .ready .ln .w{transform:none}.ready .ln:nth-child(2) .w{transition-delay:.12s}
 .h1 .payoff{transition:transform 1.3s var(--ease) .12s,opacity 1s var(--ease);opacity:.0}
 .ready .h1 .payoff{opacity:.22}
-.h1 .payoff.on{opacity:1}
+.h1 .payoff.on{opacity:1;text-shadow:0 2px 18px rgba(0,0,0,.45),0 1px 3px rgba(0,0,0,.35)}
 .hero-f{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-top:clamp(18px,3vh,32px)}
 .hero-f p{max-width:31em;font-size:clamp(16px,1.2vw,19px);line-height:1.45;font-weight:500}
 .hero-f .btn{text-shadow:none;flex:none}

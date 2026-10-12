@@ -17,6 +17,8 @@ const t0=performance.now(),DUR=1500;
 const po=$('#payoff'),PAY=5.75;
 function pay(){if(!po.classList.contains('on')&&root.classList.contains('ready')&&(hv.currentTime>=PAY||paused))po.classList.add('on')}
 hv.addEventListener('timeupdate',pay);
+// fallback: land even if the film stalls, is blocked from autoplay, or loops past the cue unseen
+new MutationObserver((m,o)=>{if(root.classList.contains('ready')){o.disconnect();setTimeout(()=>po.classList.add('on'),Math.max(0,(PAY-(hv.currentTime||0))*1000)+600)}}).observe(root,{attributes:true,attributeFilter:['class']});
 // words
 const big=$('.words');
 (function split(n){[...n.childNodes].forEach(c=>{if(c.nodeType===3){const f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(p=>{if(!p)return;if(/^\s+$/.test(p))f.append(p);else{const s=document.createElement('span');s.className='wd';s.textContent=p;f.append(s)}});c.replaceWith(f)}else if(c.nodeType===1)split(c)})})(big);
