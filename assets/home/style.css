@@ -368,3 +368,4 @@ html.light .pp,html.light .bar .mbtn{border-color:rgba(18,17,16,.55);background:
 /* loader: 'Web Design' in static gold Pinyon */
 .iwd{display:inline-block;font-family:'Pinyon Script',cursive;font-weight:400;letter-spacing:0;font-size:1.05em;line-height:1.25;padding:.12em .3em .28em .05em;margin:-.1em 0 -.2em;background:linear-gradient(180deg,#f3dc9a 0%,#d4ae5a 45%,#b68a3a 70%,#e2c27a 100%);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;transition:opacity .9s ease .35s}
 .intro.go .iwd{opacity:1}
+.iwd{padding-left:0;padding-right:.15em}
