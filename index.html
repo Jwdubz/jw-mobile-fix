@@ -22,231 +22,146 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/instrument-serif-regular-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/instrument-serif-italic-latin.woff2" crossorigin>
-<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
-<link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet"></noscript>
-<script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/assets/jw/jw.css?v=20261010d">
-<link rel="stylesheet" href="/assets/jw/hero.css?v=20261009a">
-<link rel="preload" as="image" href="/assets/jw/hero/hero-poster.jpg?v=20261010c" fetchpriority="high">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=boska@400i,500i&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=boska@400i,500i&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="/assets/home/style.css?v=47">
+<link rel="preload" as="image" href="/assets/home/film/hero.jpg" fetchpriority="high">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://jarrettwroten.com/#website","url":"https://jarrettwroten.com/","name":"Jarrett Wroten"},{"@type":"Person","@id":"https://jarrettwroten.com/#jarrett","name":"Jarrett Wroten","url":"https://jarrettwroten.com/","image":"https://jarrettwroten.com/jarrett.jpg","sameAs":["https://www.linkedin.com/in/jarrettwroten","https://www.instagram.com/jarrettwroten/"],"email":"mailto:Jarrett@JarrettWroten.com","jobTitle":"Conversion-focused web designer and business optimizer","homeLocation":{"@type":"City","name":"Las Vegas"}},{"@type":["Organization","ProfessionalService"],"@id":"https://jarrettwroten.com/#business","name":"Jarrett Wroten","url":"https://jarrettwroten.com/","image":"https://jarrettwroten.com/jarrett.jpg","sameAs":["https://www.linkedin.com/in/jarrettwroten","https://www.instagram.com/jarrettwroten/"],"knowsAbout":["Web design","Website redesign","Conversion rate optimization","Revenue operations"],"email":"Jarrett@JarrettWroten.com","areaServed":{"@type":"City","name":"Las Vegas"},"founder":{"@id":"https://jarrettwroten.com/#jarrett"},"description":"Website design and conversion improvements for owner-led service businesses in Las Vegas."},{"@type":"Service","@id":"https://jarrettwroten.com/las-vegas-web-design/#service","name":"Las Vegas web design and website redesign","serviceType":["Website design","Website redesign","Conversion improvements"],"url":"https://jarrettwroten.com/las-vegas-web-design/","provider":{"@id":"https://jarrettwroten.com/#business"},"areaServed":{"@type":"City","name":"Las Vegas"}}]}
 </script>
 <script type="text/javascript">(function(w,d){w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments)};var done=0,ev=["scroll","pointerdown","keydown"],o={passive:true,capture:true};function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});var t=d.createElement("script");t.async=1;t.src="https://www.clarity.ms/tag/yvve5xueah";var y=d.getElementsByTagName("script")[0];y.parentNode.insertBefore(t,y)}ev.forEach(function(e){w.addEventListener(e,go,o)});function idle(){w.requestIdleCallback?w.requestIdleCallback(go,{timeout:2500}):setTimeout(go,2500)}d.readyState==="complete"?setTimeout(idle,4000):w.addEventListener("load",function(){setTimeout(idle,4000)},{once:true})})(window,document);clarity("set","site","jarrettwroten");</script>
 </head>
-<body class="pg-home">
-<a class="skip" href="#main">Skip To Content</a>
-<header class="hdr" id="hdr">
-  <a class="hdr__mark" href="/" aria-label="Jarrett Wroten, home">Jarrett Wroten</a>
-  <a class="btn btn--accent btn--sm hdr__cta" href="/book/"><span class="hdr__cta-lg">Get A&nbsp;</span>Free Concept</a>
+<body>
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-name"><span class="m"><span>Jarrett</span></span> <span class="m"><span><em>Wroten</em></span></span></div>
+  <div class="intro-n"><span id="introN">0</span></div>
+  <div class="intro-line"><i id="introBar"></i></div>
+</div>
+<a class="skip" href="#work">Skip To The Work</a>
+<header class="bar" id="bar">
+  <span class="mark">Jarrett Wroten</span>
+  <div class="bar-r">
+    <button class="pp" id="pp" aria-pressed="false"><span class="pp-i"></span><span class="pp-t">Pause</span></button>
+    <a class="btn btn-sm bar-cta" href="/book/">Book Your Free Concept Call</a>
+    <button class="mbtn" id="mbtn" aria-expanded="false" aria-controls="menu"><span class="mbtn-t">Menu</span></button>
+  </div>
 </header>
-<button class="motion" id="motionBtn" type="button" aria-pressed="false" aria-label="Pause Motion"><span class="motion__ico" aria-hidden="true"></span><span class="motion__txt">Pause</span></button>
+<div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="menu-top"><span class="mark">Jarrett Wroten</span><button class="mbtn" id="mclose">Close</button></div>
+  <a class="btn btn-lg menu-cta" href="/book/">Book Your Free Concept Call</a>
+  <p class="menu-k">The Concepts</p>
+  <ul class="menu-l" id="menuL"></ul>
+  <div class="menu-f"><a href="mailto:Jarrett@JarrettWroten.com">Jarrett@JarrettWroten.com</a><span>Las Vegas, Nevada</span></div>
+</div>
 
-<main id="main">
-
-<section class="hero hero--film" id="top" aria-labelledby="heroTitle">
-  <div class="hero__glow" aria-hidden="true"></div>
-  <div class="hero__head">
-    <div class="hcards" id="hcards" aria-hidden="true"><div class="hcard hcard--0"><span class="card__bar"><i></i><i></i><i></i></span><div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/wrapstar.jpg?v=20261010b" aria-label="Wrapstar concept, live hero"><source src="/assets/jw/work/wrapstar.mp4?v=20261010b" type="video/mp4"></video></div></div><div class="hcard hcard--1"><span class="card__bar"><i></i><i></i><i></i></span><div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/generations.jpg?v=20261010b" aria-label="Generations Kitchen concept, live hero"><source src="/assets/jw/work/generations.mp4?v=20261010b" type="video/mp4"></video></div></div><div class="hcard hcard--2"><span class="card__bar"><i></i><i></i><i></i></span><div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/starbase.jpg?v=20261010b" aria-label="Starbase Wraps concept, live hero"><source src="/assets/jw/work/starbase.mp4?v=20261010b" type="video/mp4"></video></div></div></div>
-    <p class="hero__kicker" data-hero>Conversion Websites For Las Vegas Businesses</p>
-    <h1 class="hero__title" id="heroTitle">
-      <span class="hero__l1"><span class="w" data-hero-w>Customers</span> <span class="w" data-hero-w>Leave</span> <span class="w" data-hero-w>Quietly.</span></span>
-      <span class="hero__l2" data-hero>I Map The Exit And Build The Fix.</span>
-    </h1>
-    <div class="hero__row">
-      <p class="hero__sub" data-hero>Send me your current site. I’ll build a free concept before our call, so you see the fix before you buy it.</p>
-      <div class="hero__ctas" data-hero>
-        <a class="btn btn--accent btn--lg magnetic" href="#call">Get My Free Concept</a>
-      </div>
-    </div>
-  </div>
-  <figure class="plate" id="plate">
-    <div class="plate__frame" id="plateFrame">
-      <video class="plate__v" id="plateVideo" data-loop data-hero-film muted loop playsinline preload="auto" poster="/assets/jw/hero/hero-poster.jpg?v=20261010c" aria-label="Six concept sites I built, playing one after another">
-        <source src="/assets/jw/hero/hero-1920-av1.mp4?v=20261010c" media="(min-width: 801px)" type='video/mp4; codecs="av01.0.08M.08"'>
-        <source src="/assets/jw/hero/hero-1920-h264.mp4?v=20261010c" media="(min-width: 801px)" type="video/mp4">
-        <source src="/assets/jw/hero/hero-av1.mp4?v=20261010c" type='video/mp4; codecs="av01.0.08M.08"'>
-        <source src="/assets/jw/hero/hero-h264.mp4?v=20261010c" type="video/mp4">
-      </video>
-    </div>
-    <figcaption class="plate__cap">
-      <span class="plate__now" aria-live="off"><span class="plate__name" id="plateName">Wrapstar</span> <span class="plate__cat" id="plateCat">Wraps, Ceramic Coating And Tint</span></span>
-      <a class="lnk lnk--light" id="plateLink" href="https://wrapstar.jarrettwroten.com/" target="_blank" rel="noopener">Open<span class="plate__lg"> This Concept</span> <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-    </figcaption>
-  </figure>
-</section>
-
-<section class="reel" id="reel" aria-labelledby="reelNote">
-  <div class="reel__strip"><div class="reel__track"><a class="reel__phone" href="https://rainbow.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Rainbow Gardens concept in a new tab"><img src="/assets/jw/phone/rainbow.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://starbase.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Starbase Wraps concept in a new tab"><img src="/assets/jw/phone/starbase.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://generations.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Generations Kitchen concept in a new tab"><img src="/assets/jw/phone/generations.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://rana.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Rana Levy concept in a new tab"><img src="/assets/jw/phone/rana.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://wrapstar.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Wrapstar concept in a new tab"><img src="/assets/jw/phone/wrapstar.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://paina.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Pā‘ina Café concept in a new tab"><img src="/assets/jw/phone/paina.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://purpleflare.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Purple Flare Wraps concept in a new tab"><img src="/assets/jw/phone/purpleflare.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://stirling.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Stirling Club concept in a new tab"><img src="/assets/jw/phone/stirling.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://truheart.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Tru Heart Consulting concept in a new tab"><img src="/assets/jw/phone/truheart.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://prorok.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Dylan Prorok concept in a new tab"><img src="/assets/jw/phone/prorok.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://heritage.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Heritage Tattoo concept in a new tab"><img src="/assets/jw/phone/heritage.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://rainbow.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/rainbow.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://starbase.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/starbase.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://generations.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/generations.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://rana.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/rana.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://wrapstar.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/wrapstar.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://paina.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/paina.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://purpleflare.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/purpleflare.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://stirling.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/stirling.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://truheart.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/truheart.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://prorok.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/prorok.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a><a class="reel__phone" href="https://heritage.jarrettwroten.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/assets/jw/phone/heritage.jpg?v=20261010b" alt="" width="390" height="844" loading="eager" fetchpriority="low" decoding="async"></a></div></div>
-  <p class="reel__note" id="reelNote">Every phone is a live concept I built. Tap one to open it, or</p>
-</section>
-
-<section class="leave sec sec--bone" id="leave" aria-labelledby="leaveTitle">
-  <div class="wrap">
-    <h2 class="h2" id="leaveTitle" data-split>I Find Where Your Business Quietly Loses Customers.</h2>
-    <p class="lede" data-reveal>Then I build you the fix. Most people who leave never call to tell you why. They just go.</p>
-    <div class="path" id="path">
-      <svg class="path__svg" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true"><path id="pathLine" d="M10 120 C 220 10, 380 150, 600 80 S 980 10, 1190 110" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
-      <ol class="path__steps">
-        <li class="path__step" data-reveal><h3>They Arrive</h3><p>They land on your site and decide fast whether they’re in the right place.</p></li>
-        <li class="path__step" data-reveal><h3>They Drift</h3><p>They look for the next step. It’s buried, vague or one tap too far.</p></li>
-        <li class="path__step path__step--exit" data-reveal><h3>They Leave</h3><p>No call, no form, no booking. And nothing tells you it happened.</p></li>
-      </ol>
-    </div>
-    <div class="proof" data-reveal>
-      <p class="proof__label">Gross Volume For One Las Vegas Service Business, May 15 To June 15, 2026</p>
-      <p class="proof__num"><span data-count="40114.81">$40,114.81</span></p>
-      <p class="proof__meta">Up 104.51% From $19,615.40.</p>
-      <p class="proof__fine">Your result will depend on your business.</p>
+<main>
+<div class="hero-wrap" id="heroWrap">
+<section class="hero" aria-label="Opening film">
+  <video class="hero-v" id="heroV" autoplay muted loop playsinline preload="auto" poster="/assets/home/film/hero.jpg">
+    <source src="/assets/home/film/hero-sm.mp4" media="(max-width: 700px) and (orientation: portrait)" type="video/mp4">
+    <source src="/assets/home/film/hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-c">
+    <h1 class="h1"><span class="ln"><span class="w">Your Business,</span></span><span class="ln"><span class="w">Made</span> <em class="w payoff" id="payoff">Cinematic.</em></span></h1>
+    <div class="hero-f">
+      <p class="fade">I'm Jarrett Wroten, the Las Vegas web designer. I build your site from your own footage, and I build a free concept of it before we ever talk.</p>
+      <a class="btn fade" href="/book/">Book Your Free Concept Call</a>
     </div>
   </div>
 </section>
 
-<section class="how sec" id="how" aria-labelledby="howTitle">
-  <span id="process-journey" aria-hidden="true"></span>
-  <div class="wrap how__grid">
-    <div class="how__copy">
-      <h2 class="h2" id="howTitle" data-split>Look. Find The Leak. Build The Fix.</h2>
-      <ol class="steps">
-        <li class="step" data-reveal><div><h3>Look</h3><p>I walk through your site like a real customer.</p></div></li>
-        <li class="step" data-reveal><div><h3>Find The Leak</h3><p>I find the first place people leave.</p></div></li>
-        <li class="step" data-reveal><div><h3>Build The Fix</h3><p>I build the page, form or follow-up that fixes it.</p></div></li>
-      </ol>
+</div>
+<section class="say grid" data-theme="dark" aria-label="What I do">
+  <p class="say-k">Las Vegas, Nevada</p>
+  <p class="big words">Most people who leave your site never call to tell you why. I find where they go, then I build the fix from <em>your own film.</em></p>
+</section>
+
+<section class="work" data-theme="dark" id="work" aria-label="The work">
+  <div class="work-pin">
+    <div class="work-top grid">
+      <h2 class="h2 mask"><span class="ml"><span>Eleven Concepts.</span></span><span class="ml"><span><em>Open Any Of Them.</em></span></span></h2>
+      <p class="work-meta"><span id="wCount">01</span> <em>of</em> 11</p>
     </div>
-    <figure class="how__me" data-reveal>
-      <div class="how__photo"><img src="/assets/jw/jarrett.jpg" alt="Jarrett Wroten" width="900" height="1125" loading="lazy" decoding="async"></div>
-      <figcaption><strong>I build the fix myself.</strong> You work with me from the first look through the finished fix. Your first look is free.</figcaption>
-    </figure>
+    <div class="track" id="track"></div>
+    <div class="work-name" id="wName" aria-hidden="true"></div>
+    <div class="work-prog"><i id="wProg"></i></div>
   </div>
 </section>
 
-<section class="work sec" id="work" aria-labelledby="workTitle">
-  <div class="wrap">
-    <div class="work__head">
-      <h2 class="h2" id="workTitle" data-split>Concepts You Can Open Right Now.</h2>
-      <p class="lede lede--light" data-reveal>Each one is built from the business’s own footage and lives on its own link. Every one is a concept, built on spec.</p>
-    </div>
-    <div class="work__grid"><article class="card card--t0" data-reveal>
-  <a class="card__frame" href="https://rainbow.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Rainbow Gardens concept in a new tab">
-    <span class="card__bar" aria-hidden="true"><i></i><i></i><i></i><span>rainbow.jarrettwroten.com</span></span>
-    <div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/rainbow.jpg?v=20261010b" aria-label="Rainbow Gardens concept, live hero"><source src="/assets/jw/work/rainbow.mp4?v=20261010b" type="video/mp4"></video></div>
-  </a>
-  <div class="card__body">
-    <div class="card__meta"><span class="chip">Concept</span><span class="card__cat">Wedding Venue</span></div>
-    <h3 class="card__name">Rainbow Gardens</h3>
-    <p class="card__line">The vow lands first. Then the gardens, the ballroom and the dance floor play behind it until a couple asks to see their date.</p>
-    <div class="card__links"><a class="lnk" href="https://rainbow.jarrettwroten.com/" target="_blank" rel="noopener">Open The Concept <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<section class="how" data-theme="light" aria-label="How it works">
+  <div class="how-head grid">
+    <h2 class="h2 mask"><span class="ml"><span>Look. Find The Leak.</span></span><span class="ml"><span><em>Build The Fix.</em></span></span></h2>
+    <p class="how-sub">Every concept starts the same way, and your first look is free.</p>
   </div>
-</article><article class="card card--t1" data-reveal>
-  <a class="card__frame" href="https://starbase.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Starbase Wraps concept in a new tab">
-    <span class="card__bar" aria-hidden="true"><i></i><i></i><i></i><span>starbase.jarrettwroten.com</span></span>
-    <div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/starbase.jpg?v=20261010b" aria-label="Starbase Wraps concept, live hero"><source src="/assets/jw/work/starbase.mp4?v=20261010b" type="video/mp4"></video></div>
-  </a>
-  <div class="card__body">
-    <div class="card__meta"><span class="chip">Concept</span><span class="card__cat">Tesla Wraps And PPF</span></div>
-    <h3 class="card__name">Starbase Wraps</h3>
-    <p class="card__line">A loud, Tesla-only opening that dares you to make yours out of this world, with booking on the very first screen.</p>
-    <div class="card__links"><a class="lnk" href="https://starbase.jarrettwroten.com/" target="_blank" rel="noopener">Open The Concept <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-  </div>
-</article><article class="card card--t2" data-reveal>
-  <a class="card__frame" href="https://generations.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Generations Kitchen concept in a new tab">
-    <span class="card__bar" aria-hidden="true"><i></i><i></i><i></i><span>generations.jarrettwroten.com</span></span>
-    <div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/generations.jpg?v=20261010b" aria-label="Generations Kitchen concept, live hero"><source src="/assets/jw/work/generations.mp4?v=20261010b" type="video/mp4"></video></div>
-  </a>
-  <div class="card__body">
-    <div class="card__meta"><span class="chip">Concept</span><span class="card__cat">Hawaiian Restaurant</span></div>
-    <h3 class="card__name">Generations Kitchen</h3>
-    <p class="card__line">The food gets the first word. By the time the menu appears, you’re already deciding what to order.</p>
-    <div class="card__links"><a class="lnk" href="https://generations.jarrettwroten.com/" target="_blank" rel="noopener">Open The Concept <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-  </div>
-</article><article class="card card--t3" data-reveal>
-  <a class="card__frame" href="https://rana.jarrettwroten.com/" target="_blank" rel="noopener" aria-label="Open the Rana Levy concept in a new tab">
-    <span class="card__bar" aria-hidden="true"><i></i><i></i><i></i><span>rana.jarrettwroten.com</span></span>
-    <div class="media "><video class="media__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/work/rana.jpg?v=20261010b" aria-label="Rana Levy concept, live hero"><source src="/assets/jw/work/rana.mp4?v=20261010b" type="video/mp4"></video></div>
-  </a>
-  <div class="card__body">
-    <div class="card__meta"><span class="chip">Concept</span><span class="card__cat">Fine Jewelry And Lapidary</span></div>
-    <h3 class="card__name">Rana Levy</h3>
-    <p class="card__line">The ring catches your eye. Then the stone shifts in the light, and you have to look again.</p>
-    <div class="card__links"><a class="lnk" href="https://rana.jarrettwroten.com/" target="_blank" rel="noopener">Open The Concept <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12L12 4M6 4h6v6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-  </div>
-</article></div>
-    <div class="work__more" data-reveal><a class="btn btn--light btn--lg magnetic" href="/portfolio/">See All 11 Concepts</a></div>
+  <div class="stack">
+    <article class="card"><div class="card-n"><em>i</em></div><div class="card-t"><h3>Look</h3><p>I walk through your site like a real customer.</p></div><div class="card-f"><video muted loop playsinline preload="none" poster="/assets/home/film/w-rainbow.jpg" data-src="/assets/home/film/w-rainbow.mp4"></video></div></article>
+    <article class="card"><div class="card-n"><em>ii</em></div><div class="card-t"><h3>Find The Leak</h3><p>I find the first place people leave.</p></div><div class="card-f"><video muted loop playsinline preload="none" poster="/assets/home/film/w-purpleflare.jpg" data-src="/assets/home/film/w-purpleflare.mp4"></video></div></article>
+    <article class="card"><div class="card-n"><em>iii</em></div><div class="card-t"><h3>Build The Fix</h3><p>I build the page, form or follow-up that fixes it.</p></div><div class="card-f"><video muted loop playsinline preload="none" poster="/assets/home/film/w-wrapstar.jpg" data-src="/assets/home/film/w-wrapstar.mp4"></video></div></article>
   </div>
 </section>
 
-<section class="call sec sec--accent" id="call" aria-labelledby="callTitle">
-  <div class="wrap call__inner">
-    <h2 class="h2 h2--xl" id="callTitle" data-split>Get A Free Concept For Your Site.</h2>
-    <p class="lede lede--dark" data-reveal>Add your current website, pick a time, and I’ll build your concept before our call. Fifteen minutes on Google Meet, Pacific time.</p>
-    <div class="call__ctas" data-reveal>
-      <a class="btn btn--ink btn--lg magnetic" href="/book/">Book My Free Concept Call</a>
-      <a class="lnk lnk--dark" href="mailto:Jarrett@JarrettWroten.com?subject=Take%20a%20look%20at%20my%20site&amp;body=My%20site%3A%0A%0AWhat%20I%20want%20more%20of%3A%0A">Or Email Me Your Site</a>
-    </div>
+<section class="proof grid" data-theme="light" aria-label="One result">
+  <p class="proof-k">Gross Volume For One Las Vegas Service Business, May 15 To June 15, 2026</p>
+  <p class="proof-n mask"><span class="ml"><span id="num">$40,114.81</span></span></p>
+  <div class="proof-s"><p>Up 104.51% From $19,615.40.</p><p class="dim">Your result will depend on your business.</p></div>
+</section>
+
+<section class="me grid" data-theme="dark" aria-label="About Jarrett">
+  <div class="me-p"><img src="/assets/home/jarrett.jpg" alt="Jarrett Wroten" width="900" height="1125" loading="lazy"></div>
+  <div class="me-t">
+    <h2 class="h2 mask"><span class="ml"><span>I Build The Fix</span></span><span class="ml"><span><em>Myself.</em></span></span></h2>
+    <p class="fade">You work with me from the first look through the finished fix. Every concept on this page I built on spec, from the business's own footage.</p>
+    <p class="fade me-sig">Your first look is free.</p>
   </div>
 </section>
 
-<section class="walk" id="walkthrough" aria-labelledby="walkTitle">
-  <div class="walk__bg" aria-hidden="true">
-    <video class="walk__v" data-loop muted loop playsinline preload="none" poster="/assets/jw/corridor.jpg"><source src="/assets/work/corridor-entry-loop.mp4" type="video/mp4"></video>
-  </div>
-  <div class="wrap walk__inner">
-    <h2 class="h2 h2--light" id="walkTitle" data-split>Want The Long Way In?</h2>
-    <p class="lede lede--light" data-reveal>There’s a 3D walkthrough down the corridor to meet me. It takes about fifteen seconds, and it’s completely optional.</p>
-    <button class="btn btn--light btn--lg magnetic" type="button" id="walkOpen" aria-haspopup="dialog">Take The Walkthrough</button>
+<section class="walk" id="walkthrough" data-theme="dark" aria-labelledby="walkTitle">
+  <div class="walk-bg" aria-hidden="true"><video class="walk-v" muted loop playsinline preload="none" poster="/assets/home/walk/corridor.jpg" data-src="/assets/home/walk/corridor-entry-loop.mp4"></video></div>
+  <div class="walk-t">
+    <h2 class="h2 mask" id="walkTitle"><span class="ml"><span>Want The Long</span></span><span class="ml"><span><em>Way In?</em></span></span></h2>
+    <p class="walk-p fade">There’s a 3D walkthrough down the corridor to meet me. It takes about fifteen seconds, and it’s completely optional.</p>
+    <div class="fade"><button class="btn btn-lg" type="button" id="walkOpen" aria-haspopup="dialog">Take The Walkthrough</button></div>
   </div>
 </section>
 
 <dialog class="film" id="walkDialog" aria-label="The walkthrough">
-  <div class="film__frame">
-    <video class="film__v" id="walkVideo" muted playsinline preload="none" poster="/assets/jw/corridor.jpg"><source src="/assets/golden-arrival/golden-arrival-approved.mp4" type="video/mp4"></video>
-    <div class="film__end" id="walkEnd" hidden>
-      <p class="film__endt">That’s Me. Now Let’s Look At Yours.</p>
-      <a class="btn btn--accent btn--lg" href="/book/">Book My Free Concept Call</a>
-      <button class="lnk lnk--light" type="button" id="walkReplay">Watch Again</button>
+  <div class="film-f">
+    <video class="film-v" id="walkVideo" muted playsinline preload="none" poster="/assets/home/walk/corridor.jpg"><source src="/assets/home/walk/golden-arrival-approved.mp4" type="video/mp4"></video>
+    <div class="film-end" id="walkEnd" hidden>
+      <p class="film-endt">That’s Me. Now Let’s Look At Yours.</p>
+      <a class="btn btn-lg" href="/book/">Book Your Free Concept Call</a>
+      <button class="film-lnk" type="button" id="walkReplay">Watch Again</button>
     </div>
   </div>
-  <div class="film__bar">
-    <label class="film__scrub"><span class="vh">Walkthrough Position</span><input type="range" id="walkScrub" min="0" max="1000" value="0"></label>
-    <button class="btn btn--light btn--sm" type="button" id="walkClose">Close</button>
+  <div class="film-bar">
+    <label class="film-scrub"><span class="vh">Walkthrough Position</span><input type="range" id="walkScrub" min="0" max="1000" value="0"></label>
+    <button class="btn btn-sm" type="button" id="walkClose">Close</button>
   </div>
 </dialog>
 
+<section class="end" aria-label="Book">
+  <div class="end-v-w"><video class="end-v" muted loop playsinline preload="none" poster="/assets/home/film/w-stirling.jpg" data-src="/assets/home/film/w-stirling.mp4"></video></div>
+  <div class="end-t">
+    <h2 class="h-end mask"><span class="ml"><span>Now Let's Look</span></span><span class="ml"><span><em>At Yours.</em></span></span></h2>
+    <p class="end-p fade">Add your current website, pick a time, and I'll build your concept before our call. Fifteen minutes on Google Meet, Pacific time.</p>
+    <div class="fade"><a class="btn btn-lg" href="/book/">Book Your Free Concept Call</a></div>
+  </div>
+</section>
 </main>
-<footer class="ftr">
-  <div class="ftr__top">
-    <p class="ftr__big">Jarrett Wroten</p>
-    <p class="ftr__line">Conversion websites for Las Vegas businesses.</p>
+<div class="cursr" id="cur" aria-hidden="true"><span>View</span></div>
+
+<footer class="foot">
+  <div class="foot-w">Jarrett <em>Wroten</em></div>
+  <div class="foot-row">
+    <a href="mailto:Jarrett@JarrettWroten.com">Jarrett@JarrettWroten.com</a>
+    <span>Las Vegas, Nevada</span>
+    <a href="/portfolio/">Portfolio</a>
+    <a href="/privacy/">Privacy</a>
+    <button class="top" id="top">Back To Top</button>
   </div>
-  <div class="ftr__cols">
-    <div>
-      <h2 class="ftr__h">What I Build</h2>
-      <ul class="ftr__list"><li>Website Design</li><li>AI And Automation</li><li>Sales And Follow-Up</li><li>SEO And Lead Generation</li><li>Landing Pages</li></ul>
-    </div>
-    <div>
-      <h2 class="ftr__h">Around The Site</h2>
-      <ul class="ftr__list">
-        <li><a href="/book/">Book A Free Concept Call</a></li>
-        <li><a href="/privacy/">Privacy</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="ftr__h">Say Hello</h2>
-      <ul class="ftr__list"><li><a href="mailto:Jarrett@JarrettWroten.com">Jarrett@JarrettWroten.com</a></li><li>Las Vegas, Nevada</li></ul>
-    </div>
-  </div>
-  <a class="ftr__totop" href="#top">Back To Top</a>
-  <p class="ftr__fine">Every site in the portfolio is a concept I built on spec from the business’s own footage. None is shown as a paid client launch.</p>
+  <p class="fine">Every site shown is a concept I built on spec from the business's own footage. None is shown as a paid client launch.</p>
 </footer>
-
-<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script defer src="/assets/jw/jw.js?v=20261010d"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="/assets/home/app.js?v=48"></script>
 </body>
 </html>
