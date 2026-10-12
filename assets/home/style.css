@@ -344,3 +344,17 @@ html.light .pp,html.light .bar .mbtn{border-color:rgba(18,17,16,.55);background:
 
 /* perf: hero copy starts at an invisible .01 under the intro curtain (no visual change) so it registers as painted */
 .hero .fade{opacity:.01}.ready .hero .fade{opacity:1}
+
+/* Android QA 2026-10-12: phones show every clip at its real 16:9 frame (no deep cover crop, never above native 1280px) */
+@media (max-width:860px){
+  .track{align-items:flex-start!important}
+  .pc{height:auto!important;align-self:flex-start!important}
+  .pc-f{height:auto!important;width:86vw!important;max-width:86vw!important;aspect-ratio:16/9!important}
+  .pc-f video{inset:0!important;width:100%!important;height:100%!important;transform:none!important}
+  .card-f{aspect-ratio:16/9!important;min-height:0!important;flex:none!important}
+  .end-v-w{clip-path:none!important}
+  .end-v{aspect-ratio:16/9!important}
+  .walk{flex-direction:column;align-items:stretch;min-height:0!important;padding-top:96px}
+  .walk-bg{position:relative;inset:auto;z-index:0;width:100%;aspect-ratio:16/9;margin-bottom:28px;border-radius:6px;overflow:hidden}
+  .walk-bg::after{display:none}
+}
